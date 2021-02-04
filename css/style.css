@@ -1,5 +1,6 @@
 body{
     height: 100%;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 /* nav bar css*/
@@ -31,7 +32,7 @@ body{
 
  .fa{
      padding-right: 10px;
-     margin-top: 5px;
+     margin-top: 10px;
      padding-bottom: 2px;
      margin-bottom: 8px;
  }
@@ -86,7 +87,8 @@ button{
         width: 500px;
         flex-direction: column;
         margin: 0 auto;
-        background-color:whitesmoke;
+        border: 2px solid black;
+        border-radius: 50px;
       
        
  }
@@ -106,6 +108,7 @@ button{
   
  .content_text{
      margin-bottom: 10px;
+     padding: 10px;
      
  }
  
@@ -114,10 +117,16 @@ button{
      text-decoration: unset;
   }
 
+.paragraph {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
 /* My Skills section*/
 .mySkill h1{
     text-align: center;
     font-size: 48px;
+    padding: 20px;
 }
 
 .flexContainer{
@@ -223,12 +232,12 @@ p{
 /* footer */
 footer{
     text-align: center;
-   
+    padding: 3px;
     background-color: whitesmoke;
     color: black;
     display: flex;
     justify-content: space-between;
-   padding: 3px;
+    padding: 10px;
     align-items: flex-start;
 }
 
@@ -236,7 +245,6 @@ footer .fa{
     flex-grow: 1;
     text-align: right;
     color: black;
-    margin-top: 20px;
    
 }
 
@@ -252,7 +260,6 @@ footer p{
     font-size: 12px;
     padding-top: 100px;
     padding-left: 200px;
-
 }
 
 
@@ -261,8 +268,21 @@ footer p{
     padding: 10px;
     display: flex;
     flex-direction: column;
-
-    
 }
 
+/* add media queries */
+
+@media only screen and (mad-width: 600px){
+
+
+    .workGrid {
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "project_1"
+        "project_2"
+        "project_3"
+        ;
+    }
+}
 
