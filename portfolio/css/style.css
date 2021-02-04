@@ -11,6 +11,32 @@ h1{
     padding-top: 50px;
 }
 
+h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    
+    position: relative;
+    font-family: 'Yusei Magic', sans-serif;
+    
+}
+
+h4 {
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+    margin: 10px;
+    line-height: 50px;
+    
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+p{
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 30px;
+}
+
 /*add nav bar to page*/
 .nav{
     justify-content: space-evenly;
