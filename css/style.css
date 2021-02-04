@@ -223,12 +223,12 @@ p{
 /* footer */
 footer{
     text-align: center;
-    margin: 0 auto;
+   
     background-color: whitesmoke;
     color: black;
     display: flex;
     justify-content: space-between;
-   padding: 1%;
+   padding: 3px;
     align-items: flex-start;
 }
 
@@ -250,7 +250,7 @@ footer p{
     text-align: center;
     flex-grow: 2;
     font-size: 12px;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-left: 200px;
 
 }
