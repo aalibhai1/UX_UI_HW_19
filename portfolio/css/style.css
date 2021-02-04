@@ -1,0 +1,262 @@
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+/*add nav bar to page*/
+.nav{
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;   
+    background-color: whitesmoke;
+    text-align: right;
+    font-family: 'Yusei Magic', sans-serif;
+    padding: 15px;
+}
+
+.nav_item{
+    background-color: whitesmoke;
+    border-left: 1px solid black;
+    padding: 10px;
+    
+
+}
+
+.nav_item1{
+    text-align: left;
+    flex-grow: 1;
+    padding: 5px;
+
+
+}
+
+
+ .fa{
+     padding-right: 10px;
+     margin-top: 9px;
+     padding-bottom: 2px;
+     margin-bottom: 8px;
+     
+ }
+
+
+ /* My UX Skills section code using CSS 
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1px;
+    margin: 10px;
+    
+
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    text-decoration: underline;
+    position: relative;
+    font-family: 'Yusei Magic', sans-serif;
+    
+}
+
+h4 {
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+    margin: 10px;
+    line-height: 50px;
+    text-decoration: underline;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+p{
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 30px;
+}
+
+
+.flex_child1{
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.flex_child1 p{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#my_skills{
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+}
+
+.flex_child2{
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.flex_child2 p{
+    margin-top: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+
+#code{
+    height: 500px;
+    width: 500px;
+    padding: 10px
+}
+
+.flex_child3{
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.flex_child2 p{
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+
+#interaction_design{
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+}
+*/
+
+/* add my work section code using css */
+
+.workGrid{
+    display: grid;
+    padding: 10px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "project_1 project_2"
+    "project_3 project_3"
+    ; 
+    
+}
+
+.workGrid img{
+    width: 100%;
+}
+.project_1{
+    grid-area: project_1;
+    padding-left: 100px;
+    margin: 100px;
+    width: 50%;
+}
+
+.project_2{
+    grid-area: project_2;
+    padding-left: 100px;
+    width: 50%;
+    margin-top: 100px;
+}
+
+
+.project_3{
+    grid-area: project_3;
+    
+    width: 50%;
+    padding-top: 100px;
+}
+
+button{
+    margin: 0 auto;
+    display: block;
+}
+
+/* add footer from HW17*/
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: #cccccc;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+footer .fa{
+    flex-grow: 1;
+    text-align: right;
+    color: black;
+   
+}
+
+footer p{
+    text-align: left;
+
+}
+
+.copyright{
+    align-items: baseline;
+    text-align: center;
+    flex-grow: 2;
+    font-size: 12px;
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+
+
+.footer_name{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+/* add media queries */
+
+@media only screen and (mad-width: 600px){
+    .flexContainer{
+        flex-direction: column;
+    }
+
+    .flex_child1{
+        width: 100%;
+    }
+
+
+    .flex_child2{
+        width: 100%;
+    }
+
+
+    .flex_child3{
+        width: 100%;
+    }
+
+    .workGrid {
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "project_1"
+        "project_2"
+        "project_3"
+        ;
+    }
+}
