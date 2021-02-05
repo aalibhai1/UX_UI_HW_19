@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100%;
     font-family: 'Fira Sans', sans-serif;
@@ -42,12 +46,14 @@ body{
 
  a{
      text-decoration: unset;
-     color:blue;
+     color: blue;
  }
 
- a:visited{
-
+ .about{
+     cursor: pointer;
  }
+
+
 
  /* hero image css */
  .hero_image{
@@ -73,6 +79,9 @@ button{
    border-radius: 20px;
    color: white;
    margin-right: 10;
+   height: 2%;
+   width: 60%;
+   
 }
 
 /* profile picture with summary*/
